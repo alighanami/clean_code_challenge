@@ -1,3 +1,11 @@
+def get_wallet_status():
+        return {
+            "service": "wallet",
+            "status": "ok",
+            "detail": "wallet service is alive"
+        }
+
+
 async def check_available_balance(user_id):
     user_id = await check_is_valid_objectId(user_id)
 
@@ -28,3 +36,6 @@ async def check_available_balance(user_id):
     )
 
     return available_balance, pending_balance
+
+
+    
