@@ -1,20 +1,31 @@
-﻿
-# Python
-__pycache__/
+﻿# Python
 *.pyc
-.Python
+__pycache__/
 
 # Virtual Environment
 .venv/
+venv/
+env/
 
-# Django
-db.sqlite3
-*.log
+# Local settings and environment variables
+.env        # CRITICAL: DO NOT COMMIT THIS
+.flaskenv
+.vscode/    # VS Code specific settings/files
 
-# IDE
-.idea/
-.vscode/
+# IDE files
+.idea/      # PyCharm/IntelliJ specific files
+*.swp       # Vim swap files
+*~          # Backup files
+.DS_Store   # macOS specific files
+Thumbs.db   # Windows thumbnail cache
 
-# OS
-Thumbs.db
-.DS_Store
+# Django specific
+db.sqlite3  # Default SQLite database
+*.log       # Log files
+*.pot       # Django translation files
+*.mo        # Compiled Django translation files
+*.js.map    # JavaScript source maps
+*.css.map   # CSS source maps
+
+# Docker specific
+*.pem       # Potential SSL/TLS keys or other credentials
